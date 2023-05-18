@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" image="x-icon" href="./img/blackjack.jpg">
+    <title>Blackjack Game</title>
+</head>
+<body>
+
+    <div class="head mb-5">
+        <h1 class="title text-center my-3">Blackjack Game</h1>
+        <div class="score">
+            <div><b>Pc Score : </b><span class="pcScore"></span></div>
+            <div><b>Gamer Score : </b><span class="humanScore"></span></div>      
+        </div>
+    </div>
+    <div class="gameStage">        
+        <div class="pcStage">
+
+        </div>
+        <div class="humanStage">
+
+        </div>
+    </div>
+    <div class="btnGroup text-center mt-5">
+        <button class="btn btn-danger" id="btnHit">Hit</button>
+        <button class="btn btn-info" id="btnStay">Stay</button>
+        <button class="btn btn-dark" id="btnPlay">Play Again</button>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-modal="true"
+    role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel"></h5>
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close">Close</button>
+                    <button type="button" class="btn btn-primary" id="btnRestart">Restart Game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show" id="backdrop" style="display: none;"></div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="./deckBuilder.js"></script>
+    <script src="./addCart.js"></script>
+    <script src="./score.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
